@@ -37,11 +37,11 @@ nav > ul {
   
 nav > ul > li {
     color: #373747;
-    margin: 0 0.2rem;
+    margin: 0 0.15rem;
     padding: 0.2rem;
     display: block;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 750;
     font-style: italic;
 }
@@ -58,11 +58,36 @@ li > a {
 }
 
 fieldset {
-    width: 110%;
-    margin: 30px auto 10px auto;
-    max-width: 600px;
-    border-color: rgb(137, 194, 223);
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    border-width: 8px;
+    border-radius: 23px;
     border-style: dotted;
-    border-width: 5px;
-    border-radius: 10px;
+    border-color: rgb(235, 159, 211);
+}
+
+section {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 900px;
+}
+
+h2.title, p.ahead {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+p:not(.ahead) {
+    color: rgb(134, 181, 215);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 4px double #dfdfe2;
+    margin-top: 0px;
+    padding-top: 60px;
+    font-size: 27px;
+}
+
+main {
+    background-image: url(images/image.png);
+    background-position: center;
 }
