@@ -5,12 +5,14 @@
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 45px;
+    max-width: 20%;
 }
 
 #logo {
     width: 150px;
     height: 150px;
     aspect-ratio: 10/2;
+    max-width: 20%
 }
 
 header {
@@ -25,7 +27,7 @@ header {
 
 nav {
     width: 50%;
-    max-width: 300px;
+    max-width: 40%;
     height: 50px;
   }
   
