@@ -60,7 +60,7 @@ li > a {
 fieldset {
     width: 80%;
     max-width: 700px;
-    margin: auto;
+    margin: 50px auto;
     border-width: 8px;
     border-radius: 23px;
     border-style: dotted;
@@ -73,21 +73,46 @@ section {
     max-width: 900px;
 }
 
-h2.title, p.ahead {
+h2.title, p.a {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-  
-p:not(.ahead) {
+
+h2.title {
+    letter-spacing: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p.a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+p {
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+p:not(.a) {
     color: rgb(134, 181, 215);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    border-bottom: 4px double #dfdfe2;
+    border-bottom: 10px double #dfdfe2;
     margin-top: 0px;
     padding-top: 60px;
-    font-size: 27px;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 main {
     background-image: url(images/image.png);
     background-position: center;
+}
+
+img:not(#logo) {
+    aspect-ratio: 3/4;
+    max-width: 500px;
+    border-radius: 10px;
+    border-style: dotted;
+    border-color: rgb(227, 158, 218);
+    border-width: 6px;
 }
