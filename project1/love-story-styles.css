@@ -1,10 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    outline: none;
-    text-decoration: none;
-}
-
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 45px;
@@ -14,8 +7,7 @@ h1 {
 #logo {
     height: 100%;
     aspect-ratio: 1;
-    aspect-ratio: 10/2;
-    max-width: 20%
+    max-width: 20%;
 }
 
 header {
@@ -30,7 +22,7 @@ header {
 
 nav {
     width: 50%;
-    max-width: 50%;
+    max-width: 40%;
     height: 50px;
   }
   
@@ -79,15 +71,16 @@ section {
     width: 80%;
     margin: 0 auto 10px auto;
     max-width: 900px;
-}
-
-h2.title, p.a {
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
 h2.title {
     letter-spacing: 20px;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
 }
 
 p.a {
@@ -99,30 +92,49 @@ p.a {
 p {
     letter-spacing: 2px;
     line-height: 30px;
+    width: 60%;
+    margin: 20px auto;
 }
 
 p:not(.a) {
     color: rgb(134, 181, 215);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: 700;
     border-bottom: 10px double #dfdfe2;
     padding-top: 60px;
+    font-size: 35px;
+    font-weight: 700;
 }
 
 main {
     background-image: url(images/image.png);
-    background-position: top;
+    background-position: center;
 }
 
 img:not(#logo) {
     aspect-ratio: 3/4;
-    max-width: 37%;
-    height: auto;
+    max-width: 45%;
+    height: 400px;
+    margin-top: 20px;
     border-radius: 10px;
     border-style: dotted;
     border-color: rgb(227, 158, 218);
     border-width: 6px;
+}
+
+button {
+    display: block;
+    margin: 40px auto;
+    width: 30%;
+    padding: 15px;
+    font-size: 1.438rem;
+    background: #d2dbc4;
+    border: 3px solid #3b3b4f;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #fff;
 }
 
 @media (max-width:991px) {
