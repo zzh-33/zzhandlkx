@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    list-style: none;
     outline: none;
     text-decoration: none;
 }
@@ -9,7 +8,7 @@
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 45px;
-    max-width: 20%;
+    max-width: 30%;
 }
 
 #logo {
@@ -112,7 +111,7 @@ p:not(.a) {
 
 main {
     background-image: url(images/image.png);
-    background-position: center;
+    background-position: top;
 }
 
 img:not(#logo) {
