@@ -113,7 +113,8 @@ main {
 img:not(#logo) {
     float: left;
     aspect-ratio: 3/4;
-    max-width: 45%;
+    height: 100%;
+    max-width: 50%;
     margin: 20px 20px 0px 40px;
     border-radius: 10px;
     border-style: dotted;
