@@ -1,7 +1,7 @@
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 45px;
-    max-width: 20%;
+    max-width: 30%;
 }
 
 #logo {
@@ -68,7 +68,7 @@ fieldset {
 }
 
 section {
-    width: 80%;
+    width: 100%;
     margin: 0 auto 10px auto;
     max-width: 900px;
     display: flex;
@@ -92,7 +92,7 @@ p.a {
 p {
     letter-spacing: 2px;
     line-height: 30px;
-    width: 60%;
+    width: 65%;
     margin: 20px auto;
 }
 
@@ -111,10 +111,10 @@ main {
 }
 
 img:not(#logo) {
+    float: left;
     aspect-ratio: 3/4;
     max-width: 45%;
-    height: 400px;
-    margin-top: 20px;
+    margin: 20px 20px 0px 40px;
     border-radius: 10px;
     border-style: dotted;
     border-color: rgb(227, 158, 218);
@@ -124,7 +124,8 @@ img:not(#logo) {
 button {
     display: block;
     margin: 40px auto;
-    width: 30%;
+    width: 50%;
+    max-width: 500px;
     padding: 15px;
     font-size: 1.438rem;
     background: #d2dbc4;
@@ -146,5 +147,14 @@ button:hover {
 @media (max-width: 768px) {
     h1 {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+    p:not(.a) {
+        font-size: 30px;
     }
 }
