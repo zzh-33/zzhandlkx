@@ -131,14 +131,13 @@
                         createFirework(event.clientX, event.clientY);
                     });
                 
+                    const particles = [];
                     function createFirework(x, y) {
-                        const particles = [];
-                        const count = 3300;
-                
+                        const count = 663;
                         for (let i = 0; i < count; i++) {
                             particles.push({
                                 x: x,
-                                y: y,
+                                y: y - window.innerHeight/2 + 100,
                                 velocity: {
                                     x: (Math.random() - 0.5) * 15,
                                     y: (Math.random() - 0.5) * 15

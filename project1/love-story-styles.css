@@ -110,6 +110,10 @@ main {
     background-position: center;
 }
 
+.box {
+    overflow: auto;
+}
+
 img:not(#logo) {
     float: left;
     aspect-ratio: 3/4;
@@ -137,6 +141,17 @@ button:hover {
     cursor: pointer;
     background-color: #fff;
 }
+
+body {
+    position: relative;
+}
+
+#fireworksCanvas {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    z-index: 100;
+  }
 
 @media (max-width:991px) {
     h1 {
