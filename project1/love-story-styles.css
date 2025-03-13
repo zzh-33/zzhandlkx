@@ -4,6 +4,17 @@ h1 {
     max-width: 30%;
 }
 
+@keyframes title {
+    0% {
+        transform: scale(1);
+        text-shadow: 0 0 10px rgba(235, 113, 170, 0.8);
+    }
+    100% {
+        transform: scale(1.01);
+        text-shadow: 0 0 20px rgb(198, 115, 172);
+    }
+}
+
 #logo {
     height: 100%;
     aspect-ratio: 1;
@@ -18,8 +29,11 @@ header {
     justify-content: space-between;
     align-items: center;
     top: 0;
+    border-radius: 10px;
+    border: 5px double #fff;
     position: sticky;
-    border-bottom: 5px double #a2a2be;
+    z-index: 2;
+    animation: title 3s infinite alternate;
 }
 
 nav {
@@ -43,15 +57,20 @@ nav > ul > li {
     margin: 0 0.15rem;
     padding: 0.2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 750;
     font-style: italic;
+    list-style: none;
+    border-radius: 8px;
 }
   
 nav > ul > li:hover {
-    background-color: #dfdfe2;
-    color: #1b1b32;
+    background: none;
+    color: #555575;
     cursor: pointer;
+    transform: scale(1.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
   
 li > a {
@@ -122,9 +141,18 @@ img:not(#logo) {
     max-width: 50%;
     margin: 20px 20px 0px 40px;
     border-radius: 10px;
-    border-style: dotted;
+    border-style: double;
     border-color: rgb(227, 158, 218);
     border-width: 6px;
+    position: relative;
+    z-index: 1;
+    opacity: 90%;
+}
+
+img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 button {
